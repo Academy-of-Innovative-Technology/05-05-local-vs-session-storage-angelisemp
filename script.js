@@ -1,14 +1,17 @@
 let submit = document.querySelector(".submit");
 
- let date = document.querySelector("#date").value;
 
 submit.addEventListener("click", function(e) {
+ let date = document.querySelector("#date").value;
+ let riddle = document.querySelector("#riddle").value;
+
+
   e.preventDefault();
     // localStorage here
   
-  localStorage.getItem("local storage", "#date")
+  localStorage.setItem("date", date)
   
   // sessionStorage here
 
-sessionStorage.getItem("riddle", "#date")
+sessionStorage.setItem("riddle", riddle)
 });
